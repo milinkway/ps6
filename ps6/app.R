@@ -8,6 +8,10 @@
 #
 
 library(shiny)
+library(tidyverse)
+
+# load the data
+datasets <- read_delim("data/lower.csv")
 
 # Define UI for application that draws a histogram
 ui <- fluidPage(
